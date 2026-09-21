@@ -1,0 +1,9 @@
+# Dependencies
+node_modules/
+
+#envirnment files
+.env
+.env.*
+
+
+
