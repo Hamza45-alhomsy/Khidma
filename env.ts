@@ -24,6 +24,19 @@ const envSchema = z.object({
   JWT_EXPIRES_IN: z.string().default("7d"),
   BCRYPT_ROUNDS: z.coerce.number().min(10).max(20).default(12),
   PORT: z.coerce.number().min(1).max(65535).default(3000),
+  REFRESH_TOKEN_SECRET: z.string().min(32).optional(),
+  REFRESH_TOKEN_EXPIRES_IN: z.string().default("30d"),
+  // CORS configuration
+  CORS_ORIGIN: z
+    .string()
+    .or(z.array(z.string()))
+    .default(["http://localhost:3000"])
+    .transform((val) => {
+      if (typeof val === "string") {
+        return val.split(",").map((origin) => origin.trim());
+      }
+      return val;
+    }),
 });
 
 export type ENV = z.infer<typeof envSchema>;
