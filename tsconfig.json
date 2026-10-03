@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "CommonJS",
-    "types": ["node"],
+    "module": "ESNext", // Preserves native ESM imports/exports & import.meta
+    "moduleResolution": "bundler", // Tells TS how to resolve paths in ESM/Node
+    "esModuleInterop": true, // Lets you write 'import express from "express"' cleanly
     "skipLibCheck": true
   }
 }

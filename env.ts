@@ -23,7 +23,7 @@ const envSchema = z.object({
   JWT_SECRET: z.string().min(32),
   JWT_EXPIRES_IN: z.string().default("7d"),
   BCRYPT_ROUNDS: z.coerce.number().min(10).max(20).default(12),
-  PORT: z.coerce.number().min(1).max(65535).default(3000),
+  PORT: z.coerce.number().min(1).max(65535).default(3001),
   REFRESH_TOKEN_SECRET: z.string().min(32).optional(),
   REFRESH_TOKEN_EXPIRES_IN: z.string().default("30d"),
   // CORS configuration
