@@ -1,0 +1,57 @@
+{
+  "common": {
+    "welcome": "Welcome to Khidma Platform",
+    "services": "Services",
+    "tasks": "Tasks",
+    "currency": "SYP",
+    "logout": "Logout",
+    "loggingOut": "Logging out...",
+    "useLightTheme": "Use light theme",
+    "useDarkTheme": "Use dark theme"
+  },
+  "services": {
+    "title": "Available Services",
+    "create": "Create New Service",
+    "price": "Price"
+  },
+  "categoriesPage": {
+    "title": "Available Categories",
+    "createTitle": "Create Category",
+    "nameEn": "English name",
+    "nameAr": "Arabic name",
+    "description": "Description",
+    "icon": "Icon",
+    "iconPlaceholder": "Icon name or URL",
+    "create": "Create category",
+    "creating": "Creating...",
+    "unexpectedError": "Something went wrong. Please try again."
+  },
+
+  "login": {
+    "title": "Login to your account",
+    "description": "Enter your email below to login to your account",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot your password?",
+    "submit": "Login",
+    "submitting": "Logging in...",
+    "google": "Login with Google",
+    "noAccount": "Don't have an account?",
+    "signUp": "Sign Up"
+  },
+  "register": {
+    "title": "Create an account",
+    "description": "Enter your details below to create your account",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "city": "City",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "submit": "Sign Up",
+    "submitting": "Creating account...",
+    "google": "Sign up with Google",
+    "hasAccount": "Already have an account?",
+    "login": "Login"
+  }
+}
